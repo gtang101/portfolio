@@ -1,0 +1,33 @@
+/* Copy from index */
+
+/* General layout */
+Body{
+    grid-template-areas: 
+    "nav . siteHeader"
+    "nav . content"
+    "nav . footer";
+}
+
+#content{
+    grid-area: content;
+}
+
+@media only screen and (max-width: 1000px){
+    Body{
+         grid-template-areas: 
+         "nav"
+         "siteHeader"
+         "content"
+         "footer";
+    }
+}
+
+/* Navigation */
+
+.aboutme a{
+    color: var(--accent);
+}
+
+/* End copy from index */
+
+

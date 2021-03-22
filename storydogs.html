@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/storydogs.css">
+    <title>Story Dogs</title>
+</head>
+<body>
+    <nav id="navBar" class="clr-primary padding-tnb scene_element scene_element--fadeinleft">
+        <div id="navHeader">
+            <a class="logo" href="index.html"><h1 class="logo">Gary Tang</h1></a>
+        </div>
+        
+        <div id="navTabgroup">
+        <div class="navTab casestudy padding-top"><a href="index.html">Case Studies</a></div>
+        <div class="navTab skills padding-top"><a href=skill.html>Skills</a></div>
+        <div class="navTab aboutme padding-top"><a href="about.html">About Me</a></div>
+        </div>
+    </nav>
+    
+    <section id="siteHeader" class="padding-lnr-mobi scene_element scene_element--fadein">
+        <div id="tagline" class="padding-top text-center">
+            <span><h1>Story Dogs Website Redesign</h1></span>
+            <p class="secondary-text">Website Redesign / UX Research / UI Design / Prototyping / Usability Testing</p>
+        </div>
+        <img class="img-fluid" src="img/Storydogs_Thumbnail.png">
+        <div class="row flex-row justify-content-sm-center">
+            <h3><b>Duration:</b> 3 Weeks | <b>Team:</b> Candi / Toreigh / Gary</h3>
+    </div>
+    </section>
+
+    <section id="content" class="amp padding-lnr-mobi padding-tnb scene_element scene_element--fadein">        
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>Overview</h1>
+                    <p>As part of a three weeks group project at the University of Adelaide's UX/UI Bootcamp, we had to choose and redesign a website for a not-for-profit organisation.</p>
+                    <p>We decided to go with Story Dogs, an Australia-wide volunteer-based literacy program, focuses on building reading and literacy confidence in primary-age students through fun reading activities with a volunteer dog.</p>
+                    <p>The goal of this project was to update their website to create a better user experience. Specifically, we wanted to make it easy for potential supporters of the organisation to navigate through the website and be able to find the information that they need.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fuild ln-top">
+            <div class="row"> 
+                <div class="col-sm-12 text-justify">
+                    <h1>Identifying Problems</h1>
+                    <p>By making a heuristic evaluation checklist, we were able to identify the issues within the website:</p>
+                    <ul>
+                        <li>The website doesn't practice content chunking very well, make it hard to scan and overwhelm the audience with text.</li>
+                        <li>The current information architecture of the page does not fully make sense and is unintuitive. Furthermore, the website has no breadcrumbs and has a lot of secondary pages that can potentially be merged together.</li>
+                    </ul>
+                    <p>We then tried to validate the initial findings by a set of usability tests. In the process of developing the testing plan, we determined that our target users should be someone who are interested in the organisation and wanting to support the cause. This is when we created "Sue Peterson", our proto persona, by combining the findings above and the information about the volunteers that is available on their website.</p>
+                    <img class="img-fluid" src="img/SD_Persona.png">
+                    <p>Having Sue made it easier for us to figure out our testing plan: we know that Sue wants to learn more about the organisation. Then she might want to know about the volunteering process so that she could reconnect with her teaching career. She might also be interested in knowing which schools near her are partnering with Story Dogs.</p>
+                    <p>After finalising the testing plan, we recruited 6 participants that had worked with a NFP before and have a pet for the usability test. Beside validating the UX and UI issues of the website, we also wants to know what users think when they first look at the website (general thoughts on the cause and how well the website has conveyed it)</p>
+                    <p>Notable quotes from the test:</p>
+
+                    <div class="d-flex flex-column align-items-center">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Core layout is horrible. I can see the good intentions behind it, however it could be done better.</p>
+                      </blockquote>
+                      <blockquote class="blockquote">
+                        <p class="mb-0">Sounds like a good initiative, the website doesn't sell what it does though.</p>
+                      </blockquote>
+                      <blockquote class="blockquote">
+                        <p class="mb-0">If I see a block of text, I don't want to read it.</p>
+                      </blockquote>
+                    </div>
+
+                    <h2>Key Insights:</h2>
+                    <ol>
+                        <li>Navigation system is overwhelming and have unintuitive labels.</li>
+                        <li>Lack of information hierarchy, particularly on the homepage.</li>
+                        <li>Difficult to locate key information due to excessive text and poor content layout.</li>
+                        <li>Lack of contrast and consistency with buttons.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>A New Sitemap</h1>
+                    <p>To fix the navigation system, we started to "pull apart" the current sitemap and start re-grouping them together into categories that make sense to us.</p>
+                    <p>From the original 9 primary items on the navigation bar, we trim it down to just 5. We also significantly cut down the number of secondary items by merging them together. For example, the website has 7 individual pages for each states and territories when it comes to finding participating school location. We decided to merge all of them together under a page called "Find participating schools" and have a search by postcode function on top of that page.</p>
+                    <img class="img-fluid" src="img/SD_sitemap1.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>User Flow</h1>
+                    <p>Because of the short time frame nature of this challenge, we couldn't redesign all the pages on the website. We decided to flesh out Sue's story and followed it to figure out what are the key pages that we want to prioritise. After many iterations, the user flow was finalised:
+                    </p>
+                    <img class="img-fluid" src="img/SD_UserFlowSimplified.jpg">
+                    <p>From here, we knew that we want to work on redesigning the homepage, volunteer page, donation page. However, the real challenge here is that how can we make sure the user will go all the way and either join as a volunteer or make a donation?</p>
+                    <p>For the first check point (our homepage), we want to do a better job at content chunking to captivate the visitors and build a better layout that tell users about the journey of Story Dogs. We also need to build a better navigating system for users to find important information, such as the about us page and the participating schools information page.</p>
+                    <p>Again, for the second check point, we want to break down the contents and make it easier to digest for the users. We also want to suggest other options to support the organisation at the end of this page, such as donating, which will lead user to the donation page.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>Prototyping</h1>
+                    <img class="img-fluid" src="img/SD_WF-Mockup.png">
+                    <p>We started wireframing once we know what pages we want to focus on. After figuring out the basic layout of all the pages, we started composing the UI style guide before moving onto the high-fidelity mockups.
+                    </p>
+                    <p>During this process, we conducted multiple 5-seconds-tests where we quickly showed the pages to a person outside of the team for unbiased opinions on the design.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid ln-top text-justify">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Mockups</h1>
+                    
+                </div>
+            </div>
+            <div class="row">
+                    <img class="img-fluid col-sm-6" src="img/SD/01_DesktopPrototype/01_Homepage-1.png">
+                    <div class="col-sm-6 pl-5">
+                    <h2>Homepage</h2>
+                    <p>The layout of this page was designed with the objective of explaining what Story Dogs' mission is and what have the organisation achieved so far. Throughout the page, there are multiple locations where user can learn more about our story, as well as how to support us.</p>
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 pr-5">
+                    <h2 class="text-right">Volunteer</h2>
+                    <p>The original design has a long check list of how to become a volunteer. Here we trimmed it down to a button that will open a pdf file, detailing all the information that user need to know before becoming a volunteer. As discussed in the user flow, we also have shortcuts to the donation page and the sponsor page.</p>
+                    </div>
+                <img class="img-fluid col-sm-6" src="img/SD/01_DesktopPrototype/05_Volunteer.png">
+            </div>
+
+            <div class="row">
+                <img class="img-fluid col-sm-6" src="img/SD/01_DesktopPrototype/06_Donate.png">
+                <div class="col-sm-6 pl-5">
+                <h2>Donation</h2>
+                <p>Similarly, we also have a quick way for user to explore the volunteering option at the end on this page.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 pr-5">
+                    <h2 class="text-right">Participating Schools</h2>
+                    <p>This is where we condensed 7 individual pages into one. After enter the postcode and hit the search button, a list of nearby schools will be displayed on the page.</p>
+                    </div>
+                <img class="img-fluid col-sm-6" src="img/SD/01_DesktopPrototype/09_School-2.png">
+            </div>
+        </div>
+
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>Usability Testing</h1>
+                    <p>After finalising the mockups, we conducted a set of 6 usability tests on our prototype. We reused the initial testing plan since the aim of this is to confirm whether we have improved the usability of the website (compare to the original website). To ensure that there is no bias, we also recruited new participants that have not seen the original website before.
+                    </p>
+                    <h2>Key findings:</h2>
+                    <p><b>The good:</b></p>
+                    <ul>
+                        <li>The prototype preserves the positive feeling towards the organisation.</li>
+                        <li>No complaints on the general layout of the page.</li>
+                        <li>Overlapping information throughout the page makes it easy to find where things are.</li>
+                    </ul>
+                    <p><b>The bad:</b></p>
+                    <ul>
+                        <li>IA problems: 'School Information' doesn't seem like it fits under the 'Get Involved' tab leads to confusion on where to find it.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>Iteration and Mobile</h1>
+                    
+                    <p>We worked on the IA problems and iterated our sitemap. Subsequently, we also fixed our navigation bar to reflect the new sitemap.</p>
+
+                    <img class="img-fluid" src="img/SD-sitemap2.png">
+
+                    <p>A mobile version of the website was created after we finished iterating the prototype:</p>
+
+                    <div class="d-flex justify-content-center"><img class="img-fluid" src="img/SD_Mobile-showcase.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>Next Steps</h1>
+                    
+                    <ul>
+                        <li>Connecting with Story Dogs to establish their future direction.</li>
+                        <li>Continue with the redesign process throughout the rest of the website.</li>
+                        <li>Validating our latest iteration with more usability tests</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer id="footer" class="ln-top padding-tnb scrollReveal scene_element scene_element--fadeinup">
+       
+        <h3>made in Adelaide, Australia</h3><br>
+        <div class="socialIcon">
+        <a href=www.linkedin.com/in/nguyenktang><i class="fab fa-linkedin-in fa-2x"></i></a>
+        <a href=#><i class="fas fa-envelope fa-2x"></i></a></div><br>
+        <h3><a href="document/NCV.pdf" target="_blank">my resume</a></h3><br>
+        <h3>copyright © 2021 Gary Tang</h3>
+    
+    
+    </footer>
+
+    <!-- mobile nav -->
+
+    <div id="mobiNav" class="clr-primary padding-tnb">
+        <div id="mobinavHeader">
+            <a class="logo" href="index.html"><h1 class="logo">Gary Tang</h1></a>
+            <div id="menu"><img src="img/baseline_menu_white_36dp.png"></div>
+        </div>
+        
+        <div id="mobiGroup">
+            <div class="navTab casestudy padding-top"><a href="index.html">Case Studies</a></div>
+            <div class="navTab skills padding-top"><a href=skill.html>Skills</a></div>
+            <div class="navTab aboutme padding-top"><a href="about.html">About Me</a></div>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* General layout */
+Body{
+    grid-template-areas: 
+    "nav . siteHeader"
+    "nav . content"
+    "nav . footer";
+}
+
+#content{
+    grid-area: content;
+}
+
+@media only screen and (max-width: 1000px){
+    Body{
+         grid-template-areas: 
+         "nav"
+         "siteHeader"
+         "content"
+         "footer";
+    }
+}
+
+/* Navigation */
+
+/* End copy from index */
+
+h1, h2{
+    font-weight: 700;
+}
+
+.blockquote p{
+    font-style: italic;
+}
+
+.blockquote{
+    position: relative;
+    padding: var(--spsc-2) var(--spsc-6);
+    background-color: var(--p-light);
+    width: 70%;
+}
+
+.blockquote:before {
+    font-family: Georgia, serif;
+    content: "“";
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    font-size: 5em;
+    color: var(--accent);
+    font-weight: normal;
+  }
+
+  @media only screen and (max-width: 1300px){
+      .blockquote{
+          width: 100%;
+      }
+  }
