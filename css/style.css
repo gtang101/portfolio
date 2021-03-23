@@ -14,8 +14,8 @@
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+    max-width: 1920px;
+    margin-right: auto;
     scroll-behavior: smooth;
 }
 
@@ -486,7 +486,8 @@ Body{
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    height: 100%;
+    height: 100vh;
+    max-width: 480px;
     width: 25%;
     position: fixed;
     top: 0;
@@ -577,7 +578,19 @@ i:hover{
 }
 
 /* Content */
-#content p,h1,h2,h3{
+#content p {
+    padding: var(--spsc-3) 0 var(--sp-base) 0;
+}
+
+#content h3{
+    padding: var(--spsc-3) 0 var(--sp-base) 0;
+}
+
+#content h2{
+    padding: var(--spsc-3) 0 var(--sp-base) 0;
+}
+
+#content h1{
     padding: var(--spsc-3) 0 var(--sp-base) 0;
 }
 

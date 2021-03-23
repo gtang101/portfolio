@@ -28,7 +28,8 @@ Body{
 /* Card display layout */
 #cardDisplay{
      display: flex;
-     flex-flow: column;
+     flex-wrap: wrap;
+     flex: 1 1 auto;
      margin-top: var(--spsc-5);
 }
 
