@@ -608,7 +608,3 @@ li{
     font-weight: 200;
     padding: var(--sp-base) 0;
 }
-
-.img-fluid{
-    padding: var(--spsc-3) 0;
-}
