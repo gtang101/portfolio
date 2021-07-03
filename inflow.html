@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/storydogs.css">
+
+    <title>Inflow - Mental Health Companion</title>
+</head>
+
+<body>
+    <nav id="navBar" class="clr-primary padding-tnb scene_element scene_element--fadeinleft">
+        <div id="navHeader">
+            <a class="logo" href="index.html">
+                <h1 class="logo">Gary Tang</h1>
+            </a>
+        </div>
+
+        <div id="navTabgroup">
+            <div class="navTab casestudy padding-top"><a href="index.html">Case Studies</a></div>
+            <div class="navTab skills padding-top"><a href=skill.html>Skills</a></div>
+            <div class="navTab aboutme padding-top"><a href="about.html">About Me</a></div>
+        </div>
+    </nav>
+
+    <section id="siteHeader" class="padding-lnr-mobi scene_element scene_element--fadein">
+        <div id="tagline" class="padding-top text-center">
+            <span><h1>Inflow - Mental Companion App</h1></span>
+            <p class="secondary-text">UX Research / Competitor Analysis / User Flow / Prototyping</p>
+        </div>
+        <img class="img-fluid" src="img/IF_Thumbnail.png">
+        <div class="row flex-row justify-content-sm-center mt-3">
+            <h3><b>Duration:</b> 3 Weeks | <b>Team:</b> Justine Carr / Gary Tang</h3>
+        </div>
+    </section>
+
+    <section id="content" class="amp padding-lnr-mobi padding-tnb scene_element scene_element--fadein">
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>Overview</h1>
+                    <p>The final group project at the University of Adelaide’s UX/UI Bootcamp was free to choose the theme for our project.</p>
+                    <p>During the initial brainstorming session, Justine and I realised that we are both interested in the mental health topic. We decided that we would make a mental health app that would benefit users with mild to moderate anxiety, depression,
+                        and stress. While many existing apps and services cater to this cohort, they are either too broad and clinical or too specific and casual.</p>
+                    <p>The final product is Inflow, a mental health companion mobile application that aims to provide a middle ground where users can receive professional help in a comfortable and relaxed environment thus improving their mental well-being
+                        and quality of life.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>Initial Research</h1>
+                    <p>In this project, our goals are to:</p>
+                    <ul>
+                        <li>Understand people’s coping strategies when faced with mild to moderate anxiety, depression, and stress.</li>
+                        <li>Discover what are the components of a good mental health app.</li>
+                    </ul>
+
+                    <p>With the goals in mind, we started with a survey, where we eventually received 68 responses. We found that:</p>
+                    <ul>
+                        <li>35/68 said they are looking for mental health information online.</li>
+                        <li>Participants tend to share their problems with people who are close to them (e.g. family, friends)</li>
+                        <li>Besides sharing their issues, participants like to practice mindfulness, do regular exercise and seek professional support to improve their mental well-being.</li>
+                    </ul>
+
+                    <p>We also did a literature review and came across three important resources that helped us accelerate our understanding:</p>
+
+                    <ol>
+                        <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5897664/">1. Do Mental Health Apps work (Chadrashekar, 2018)</a> - The paper provides evidence and recommendations for designing high efficacy mental health mobile apps.</p>
+                        <p><a href="https://journals.sagepub.com/doi/full/10.1177/1460458219896492">2. Insights from user reviews to improve mental health apps (Alqahtani & Orji, 2020)</a> - The researchers mined reviews of 106 mental health apps from Google
+                            Play Store and Apple’s App Store and conducted thematic analysis on 13,549 reviews. The review analysis shows many valuable user insights.</p>
+
+                        <p><a href="https://www.uxbooth.com/articles/guidelines-to-designing-apps-for-mental-health/">3. Guidelines to Designing Apps for Mental Health (Mesibov, 2018)</a> - The article detailing the journey that Mesibov and her team at Mad*Pow
+                            partook to develop the guidelines for designing apps for Mental Health.</p>
+                    </ol>
+
+                    <h2>In short, our research showed that users want an app that:</h2>
+                    <ul>
+                        <li>Have intuitive UI</li>
+                        <li>User evidence-based contents and methods</li>
+                        <li>Offer multiple functions</li>
+                        <li>Offer social engagement tools</li>
+                        <li>Allow users to personalize the app</li>
+                        <li>Respect users’ privacy and allow them to remain anonymous.</li>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>Positioning The Product</h1>
+                    <p>Understanding that we will not be the first mental health app on the market, we also did a competitor analysis to see what we should do to make our product stand out. A matrix was made to summarise our finding:</p>
+
+                    <img class="img-fluid" src="img/IF_Matrix.jpg">
+
+                    <p>On the left, we have specialized apps like <a href="https://www.hearme.app/">HearMe</a> – a messenger app similar to Lifeline crisis chat support service, and <a href="https://www.headspace.com/">Headspace</a> – a well-known meditation
+                        app with minimal UI. On the other hand, on the upper far right we have <a href="https://www.beyondblue.org.au/">
+                        Beyond
+                            Blue
+                    </a> and <a href="https://www.lifeline.org.au/">Lifeline</a> – Two not-for-profit organisations that offer a wide range of services and information. On the lower right, we have <a href="https://www.talklife.com/">Talk Life</a> and
+                        <a href="http://www.vent.co/">Vent</a> which are social media-like apps that focus on mental health topics and building a grassroots community.</p>
+
+                    <p>Noticing the gap between the two professional services and two other grassroots mobile apps, we decided to position our app right in between.</p>
+
+                    <p>We also made a user persona to help illustrate our target audience:</p>
+
+                    <img class="img-fluid cemter-block" src="img/IF_Persona.png">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>Main Features</h1>
+                    <p>With all the insights in mind, we decided to settle on four main functions for the initial prototype:</p>
+
+                    <ul>
+                        <li>A personalised mental health library</li>
+                        <li>Built-in self-reflecting tools</li>
+                        <li>Community Forum</li>
+                        <li>Support Chat run by volunteers</li>
+
+                    </ul>
+
+                    <p>Below is the wire flow showing the information architecture of the app:</p>
+                    <img class="img-fluid" src="img/IF_Wireflow.png">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>Features in Detail</h1>
+
+
+                    <ol>
+                        <h2>1. Onboarding and Dashboard</h2>
+                        <div class="row">
+                            <div class="col-md-4"><img class="img-fluid" src="img/IF_OB.gif"></div>
+                            <div class="col-md-8">
+                                <p>New users begin their journey with a quick onboarding sequence, explaining the features of the app, and asked two key pieces of information:</p>
+                                <ul>
+                                    <li>What mental health topics are they interested in – This will then be used to curate a reading list that will appear on the dashboard.</li>
+                                    <li>The users’ first name – So that when other users look at a username they are reminded that there is a real person behind an account and not just a mere string of text on the internet.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>2. Forum</h2>
+                        <div class="row">
+                            <div class="col-md-4"><img class="img-fluid" src="img/IF_Forum.gif"></div>
+                            <div class="col-md-8">
+                                <p>Borrow the concept of a social media newsfeed. The difference is that users cannot comment on a post and create a new post unless they have created an account with us. We are applying this limit to minimize harm on the
+                                    forum in case of potential online trolling and bullying. Users are still given the option to interact with the “gift a badge” features. Visit the <a href="img/IF_StyleGuide.pdf">style guide</a> to view the badge design
+                                    in detail.</p>
+                                <p>We are applying this limit to minimize harm on the forum in case of potential online trolling and bullying.</p>
+                            </div>
+                        </div>
+                        <h2>3. Self-reflecting Tools</h2>
+                        <div class="row">
+                            <div class="col-md-4"><img class="img-fluid" src="img/IF_Profile.gif"></div>
+                            <div class="col-md-8">
+                                <p>Within the profile screen, there will be journaling and mood tracking tools, as well as a tab for bookmarked articles.</p>
+                            </div>
+                        </div>
+                        <h2>4. Chat Function</h2>
+                        <div class="row">
+                            <div class="col-md-4"><img class="img-fluid" src="img/IF_Chat.png"></div>
+                            <div class="col-md-8">
+                                <p>Connects the user directly to an available volunteer. We plan to explore it more in the future.</p>
+                            </div>
+                        </div>
+                    </ol>
+
+
+                    <p>When making this app, we agreed that we do not want to lock away any essential features of the app to users just because they do not want to create an account with us.</p>
+
+                    <p>A coded prototype was also created with HTML and CSS as a <a href="https://gtang101.github.io/Inflow_Code/">proof of concept</a>.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid ln-top">
+            <div class="row">
+                <div class="col-sm-12 text-justify">
+                    <h1>Next Steps</h1>
+
+                    <ul>
+                        <li><strong>Testing of the hi-fi prototype</strong> – although we have done several usability tests in between the lo-fi prototype and hi-fi prototype, we have not tested the hi-fi itself.</li>
+                        <li><strong>Expand the chat function</strong> – the current chat function design is very barebone, that is why we want to flesh it out in the future.</li>
+                        <li><strong>Exploring the support/volunteer users’ flows</strong> – initially, this was in our plan. We had even made a persona for this type of user, but we decided to cut it out of the scope because of time constraints. We would
+                            love to revisit and develop features for this group of users.</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer id="footer" class="scrollReveal ln-top padding-tnb">
+
+        <h3>made in Adelaide, Australia</h3><br>
+        <div class="socialIcon">
+            <a href=https://www.linkedin.com/in/nguyenktang><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a href="mailto:nguyenktang@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+            <a href=https://github.com/gtang101><i class="fab fa-github fa-2x"></i></a></div><br>
+        <h3><a href="document/NCV.pdf" target="_blank">my resume</a></h3><br>
+        <h3>copyright © 2021 Gary Tang</h3>
+
+    </footer>
+
+    <!-- mobile nav -->
+
+    <div id="mobiNav" class="clr-primary padding-tnb">
+        <div id="mobinavHeader">
+            <a class="logo" href="index.html">
+                <h1 class="logo">Gary Tang</h1>
+            </a>
+            <div id="menu"><img src="img/baseline_menu_white_36dp.png"></div>
+        </div>
+
+        <div id="mobiGroup">
+            <div class="navTab casestudy padding-top"><a href="index.html">Case Studies</a></div>
+            <div class="navTab skills padding-top"><a href=skill.html>Skills</a></div>
+            <div class="navTab aboutme padding-top"><a href="about.html">About Me</a></div>
+        </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script/index.js"></script>
+
+</html>

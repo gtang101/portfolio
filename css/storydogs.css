@@ -1,40 +1,38 @@
 /* General layout */
-Body{
-    grid-template-areas: 
-    "nav . siteHeader"
-    "nav . content"
-    "nav . footer";
+
+Body {
+    grid-template-areas: "nav . siteHeader" "nav . content" "nav . footer";
 }
 
-#content{
+#content {
     grid-area: content;
 }
 
-@media only screen and (max-width: 1000px){
-    Body{
-         grid-template-areas: 
-         "nav"
-         "siteHeader"
-         "content"
-         "footer";
+@media only screen and (max-width: 1000px) {
+    Body {
+        grid-template-areas: "nav" "siteHeader" "content" "footer";
     }
 }
 
+
 /* Navigation */
+
 
 /* End copy from index */
 
-h1, h2{
+h1,
+h2 {
     font-weight: 700;
 }
 
-.blockquote p{
+.blockquote p {
     font-style: italic;
+    z-index: 2;
 }
 
-.blockquote{
+.blockquote {
     position: relative;
-    padding: var(--spsc-2) var(--spsc-6);
+    padding: var(--spsc-2) 60px;
     background-color: var(--p-light);
     width: 70%;
 }
@@ -48,10 +46,11 @@ h1, h2{
     font-size: 5em;
     color: var(--accent);
     font-weight: normal;
-  }
+    z-index: 1;
+}
 
-  @media only screen and (max-width: 1300px){
-      .blockquote{
-          width: 100%;
-      }
-  }
+@media only screen and (max-width: 1300px) {
+    .blockquote {
+        width: 100%;
+    }
+}
