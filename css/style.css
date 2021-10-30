@@ -216,6 +216,11 @@ a {
     color: var(--text);
 }
 
+a.logo{
+    color: var(--text);
+    text-decoration: none;
+}
+
 em {
     color: var(--accent);
     font-style: normal;
