@@ -1,7 +1,7 @@
 /* Copy from index */
 
 /* General layout */
-Body{
+main{
     grid-template-areas: 
     "nav . siteHeader"
     "nav . content"
@@ -13,7 +13,7 @@ Body{
 }
 
 @media only screen and (max-width: 1000px){
-    Body{
+    main{
          grid-template-areas: 
          "nav"
          "siteHeader"

@@ -1,6 +1,6 @@
 /* General layout */
 
-Body {
+main {
     grid-template-areas: "nav . siteHeader" "nav . content" "nav . footer";
 }
 
@@ -9,7 +9,7 @@ Body {
 }
 
 @media only screen and (max-width: 1000px) {
-    Body {
+    main {
         grid-template-areas: "nav" "siteHeader" "content" "footer";
     }
 }
@@ -20,7 +20,7 @@ Body {
 
 /* End copy from index */
 
-h1,
+h1:not(.logo),
 h2 {
     font-weight: 700;
 }
